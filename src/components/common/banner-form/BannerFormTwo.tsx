@@ -1,13 +1,11 @@
 "use client"
 import { useEffect, useRef, useState } from "react";
 import Flatpickr from 'react-flatpickr';
-
 interface DataType {
    id: number;
    title: string;
    count: number
 }
-
 const guest_data: DataType[] = [
    {
       id: 1,
@@ -25,18 +23,14 @@ const guest_data: DataType[] = [
       count: 0
    },
 ];
-
 const BannerFormTwo = () => {
-
    const [location, setLocation] = useState(false);
    const [checkInDate, setCheckInDate] = useState<Date | Date[]>(new Date());
    const [checkOutDate, setCheckOutDate] = useState<Date | Date[]>(new Date());
    const [guest, setGuest] = useState(false);
    const [guestCounts, setGuestCounts] = useState<DataType[]>(guest_data);
-
    const locationRef = useRef<HTMLDivElement>(null);
    const guestRef = useRef<HTMLDivElement>(null);
-
    useEffect(() => {
       const handleClickOutside = (event: MouseEvent) => {
          if (
@@ -52,13 +46,11 @@ const BannerFormTwo = () => {
             setGuest(false);
          }
       };
-
       document.addEventListener("mousedown", handleClickOutside);
       return () => {
          document.removeEventListener("mousedown", handleClickOutside);
       };
    }, []);
-
    const handleIncrement = (id: number) => {
       setGuestCounts(prev =>
          prev.map(item =>
@@ -66,7 +58,6 @@ const BannerFormTwo = () => {
          )
       );
    };
-
    const handleDecrement = (id: number) => {
       setGuestCounts(prev =>
          prev.map(item =>
@@ -76,12 +67,11 @@ const BannerFormTwo = () => {
          )
       );
    };
-
    return (
       <form onSubmit={(e) => e.preventDefault()}>
          <div className="tg-booking-form-input-group d-flex align-items-end justify-content-between">
             <div className="tg-booking-form-parent-inner tg-hero-quantity p-relative mr-15 mb-10">
-            <span className="tg-booking-form-title mb-5">Check in:</span>
+               <span className="tg-booking-form-title mb-5">Check in:</span>
                {/* <span className="tg-booking-form-title mb-5">Destinations:</span> */}
                <div ref={locationRef} onClick={() => setLocation((prev) => !prev)} className={`tg-booking-add-input-field tg-booking-quantity-toggle ${location ? "active" : ""} `}>
                   <span className="tg-booking-title-value">Where are you going . . .</span>
@@ -221,5 +211,4 @@ const BannerFormTwo = () => {
       </form>
    )
 }
-
 export default BannerFormTwo
