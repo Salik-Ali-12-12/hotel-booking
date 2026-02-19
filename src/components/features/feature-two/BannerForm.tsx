@@ -1,5 +1,4 @@
 import BannerFormTwo from "@/components/common/banner-form/BannerFormTwo"
-
 const BannerForm = () => {
    return (
       <div className="tg-booking-form-area tg-booking-form-grid-space pb-50">
@@ -15,5 +14,4 @@ const BannerForm = () => {
       </div>
    )
 }
-
 export default BannerForm

@@ -1,19 +1,19 @@
-import FeatureArea from "./FeatureArea"
-import BreadCrumb from "./BreadCrumb"
 import HeaderOne from "@/layouts/headers/HeaderOne"
+import FeatureArea from "./FeatureArea"
+import Breadcrumb from "./Breadcrumb"
 import FooterSix from "@/layouts/footers/FooterSix"
-import BannerForm from "./BannerForm"
-const FeatureOne = () => {
+
+const FeatureFour = () => {
    return (
       <>
          <HeaderOne />
          <main>
-            <BreadCrumb />
-            <BannerForm />
+            <Breadcrumb />
             <FeatureArea />
          </main>
          <FooterSix />
       </>
    )
 }
-export default FeatureOne
+
+export default FeatureFour
