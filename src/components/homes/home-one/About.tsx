@@ -1,96 +1,47 @@
-import Image, { StaticImageData } from "next/image"
-import Link from "next/link"
+import Image from 'next/image'
+import Link from 'next/link'
+import Button from '@/components/common/Button'
 
-import shape_1 from "@/assets/img/about/su/right-shape.png"
-import shape_2 from "@/assets/img/about/su/shape.png"
-import shape_3 from "@/assets/img/about/su/shape-2.png"
-import about_thumb from "@/assets/img/about/su/thumb.png"
-import icon_1 from "@/assets/img/about/su/fun-3.png"
-import icon_2 from "@/assets/img/about/su/fun-2.png"
-import icon_3 from "@/assets/img/about/su/fun-1.png"
-import author from "@/assets/img/about/su/author.jpg"
-
-interface DataType {
-   id: number;
-   icon: StaticImageData;
-   title: string;
-   count: number;
-}
-
-const feature_data: DataType[] = [
-   {
-      id: 1,
-      icon: icon_1,
-      title: "Top Destination",
-      count: 5000,
-   },
-   {
-      id: 2,
-      icon: icon_2,
-      title: "Booking Completed",
-      count: 3000
-   },
-   {
-      id: 3,
-      icon: icon_3,
-      title: "Top Destination",
-      count: 5000
-   },
-]
+import about_thumb1 from "@/assets/img/about/about.jpg"
+import about_thumb2 from "@/assets/img/about/about-2.jpg"
+import about_thumb3 from "@/assets/img/about/about-3.jpg"
+import about_thumb4 from "@/assets/img/about/about-4.jpg"
+import about_logo from "@/assets/img/about/logo.png"
 
 const About = () => {
    return (
-      <div className="tg-about-area p-relative z-index-1 pb-80">
-         <Image className="tg-about-su-right-shape d-none d-xl-block" src={shape_1} alt="" />
+      <div className="tg-about-area pb-100">
          <div className="container">
-            <div className="row align-items-end">
-               <div className="col-lg-5">
-                  <div className="tg-about-su-thumb p-relative mb-40 wow fadeInLeft" data-wow-delay=".4s" data-wow-duration=".6s">
-                     <div className="tg-about-su-shape-2">
-                        <Image src={shape_2} alt="" />
-                     </div>
-                     <div className="tg-about-su-shape">
-                        <Image src={shape_3} alt="" />
-                     </div>
-                     <Image src={about_thumb} alt="" />
+            <div className="row">
+               <div className="col-lg-3">
+                  <div className="tg-about-thumb-wrap mb-30">
+                     <Image className="w-100 tg-round-15 mb-85 wow fadeInLeft" data-wow-delay=".3s" data-wow-duration=".7s" src={about_thumb1} alt="about" />
+                     <Image className="tg-about-thumb-2 tg-round-15 wow fadeInLeft" data-wow-delay=".4s" data-wow-duration=".9s" src={about_thumb2} alt="about" />
                   </div>
                </div>
-               <div className="col-lg-7">
-                  <div className="tg-about-su-content-wrap ml-80 mb-30 wow fadeInRight" data-wow-delay=".4s" data-wow-duration=".6s">
-                     <div className="tg-location-section-title mb-30">
-                        <h5 className="tg-section-su-subtitle mb-15">Who we are</h5>
-                        <h2 className="tg-section-su-title text-capitalize mb-15">Here is Great opportunity for adventure & travels</h2>
-                        <p className="tg-section-su-para mb-10">Dorem ipsum dolor sit amet consectetur adipiscing elit. Mauris nullam the Lorem<br />
-                           ipsum dolor sit amet consectetur adipiscing elit. consectetur adipiscing elit.<br />
-                           Mauris nullam the Lorem ipsum dolor</p>
+               <div className="col-lg-6 mb-30">
+                  <div className="tg-about-content text-center">
+                     <div className="tg-about-logo mb-30 wow fadeInUp" data-wow-delay=".3s" data-wow-duration=".5s">
+                        <Image src={about_logo} alt="logo" />
                      </div>
-                     <div className="tg-about-su-funfact-wrap mb-40">
-                        {feature_data.map((item) => (
-                           <div key={item.id} className="tg-about-su-funfact-item mb-15">
-                              <div className="tg-about-su-funfact-icon mb-20">
-                                 <Image src={item.icon} alt="" />
-                              </div>
-                              <div className="tg-about-su-funfact-text">
-                                 <h3 className="mb-0">{item.count}+</h3>
-                                 <span>{item.title}</span>
-                              </div>
-                           </div>
-                        ))}
+                     <div className="tg-about-section-title mb-25">
+                        <h5 className="tg-section-subtitle wow fadeInUp" data-wow-delay=".4s" data-wow-duration=".6s">Most Popular Tour</h5>
+                        <h2 className="mb-15 wow fadeInUp" data-wow-delay=".5s" data-wow-duration=".7s">Let’s Discover The World With Our Excellent Eyes</h2>
+                        <p className="text-capitalize wow fadeInUp" data-wow-delay=".6s" data-wow-duration=".8s">Whether you&apos;re looking for a romantic getawaamily-friendly
+                           solo journey to explore the world, a travel agency can provide
+                           tailored itinerary that exceeds your expectations.</p>
                      </div>
-                     <div className="tg-about-su-author-wrap">
-                        <div className="mr-30 mb-10">
-                           <Link className="tg-btn tg-btn-hover" href="/about">More About Us</Link>
-                        </div>
-                        <div className="tg-about-su-author d-flex align-items-center mb-10">
-                           <div className="tg-about-su-author-avatar mr-10">
-                              <Image src={author} alt="" />
-                           </div>
-                           <div className="tg-about-su-author-info">
-                              <h5>Richard Kemel</h5>
-                              <span>Ceo & Founder</span>
-                           </div>
-                        </div>
+                     <div className="tp-about-btn-wrap wow fadeInUp" data-wow-delay=".7s" data-wow-duration=".9s">
+                        <Link href="/tour-details" className="tg-btn tg-btn-transparent tg-btn-switch-animation">
+                           <Button text="Take a Tour" />
+                        </Link>
                      </div>
+                  </div>
+               </div>
+               <div className="col-lg-3">
+                  <div className="tg-about-thumb-wrap  mb-30">
+                     <Image className="w-100 tg-round-15 mb-85 wow fadeInRight" data-wow-delay=".3s" data-wow-duration=".7s" src={about_thumb3} alt="about" />
+                     <Image className="tg-about-thumb-4 tg-round-15 wow fadeInRight" data-wow-delay=".4s" data-wow-duration=".9s" src={about_thumb4} alt="about" />
                   </div>
                </div>
             </div>

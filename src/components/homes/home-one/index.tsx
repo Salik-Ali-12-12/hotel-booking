@@ -1,33 +1,39 @@
-import HeaderOne from "@/layouts/headers/HeaderOne"
-import Banner from "./Banner"
-import FooterOne from "@/layouts/footers/FooterOne"
-import Location from "./Location"
+"use client"
+import BannerFormThree from "@/components/common/banner-form/BannerFormThree"
 import About from "./About"
-import Listing from "./Listing"
-import Ads from "./Ads"
-import Process from "./Process"
-import Testimonial from "./Testimonial"
+import Banner from "./Banner"
 import Blog from "./Blog"
-import Cta from "./Cta"
+import Choose from "./Choose"
+import CtaThree from "./Cta"
+import CtaTwo from "./CtaTwo"
+import Location from "./Location"
+import Testimonial from "./Testimonial"
+import dynamic from "next/dynamic"
+import HeaderThree from "@/layouts/headers/HeaderThree"
+import FooterThree from "@/layouts/footers/FooterThree"
+import Cta from "../home-one/Cta"
+const Listing = dynamic(() => import("./Listing"), { ssr: false });
 
-const HomeOne = () => {
+const HomeThree = () => {
    return (
       <>
-         <HeaderOne />
+         <HeaderThree />
          <main>
             <Banner />
-            <Location />
+            <BannerFormThree />
             <About />
             <Listing />
-            <Ads />
-            <Process />
+            <Choose />
+            <CtaThree />
+            <Location />
+            <CtaTwo />
             <Testimonial />
-            <Blog style={false} />
+            <Blog />
             <Cta />
          </main>
-         <FooterOne />
+         <FooterThree />
       </>
    )
 }
 
-export default HomeOne
+export default HomeThree
