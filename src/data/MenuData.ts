@@ -1,4 +1,3 @@
-
 interface MenuItem {
     id: number;
     title: string;
@@ -9,22 +8,22 @@ interface MenuItem {
         title: string;
     }[];
 }
-
 const menu_data: MenuItem[] = [
     {
         id: 1,
         title: "Home",
-        link: "#",
-        has_dropdown: true,
-        sub_menus: [
-            { link: "/", title: "Home One" },
-            { link: "/home-two", title: "Home Two" },
-            { link: "/home-three", title: "Home Three" },
-            { link: "/home-four", title: "Home Four" },
-            { link: "/home-five", title: "Home Five" },
-            { link: "/home-six", title: "Home Six" },
-            { link: "/home-seven", title: "Home Seven" },
-        ],
+        link: "/home-three", // Directly Home Three page
+        has_dropdown: false, // Dropdown disabled
+        // has_dropdown: true,
+        // sub_menus: [
+        //     { link: "/", title: "Home One" },
+        //     { link: "/home-two", title: "Home Two" },
+        //     { link: "/home-three", title: "Home Three" },
+        //     { link: "/home-four", title: "Home Four" },
+        //     { link: "/home-five", title: "Home Five" },
+        //     { link: "/home-six", title: "Home Six" },
+        //     { link: "/home-seven", title: "Home Seven" },
+        // ],
     },
     {
         id: 2,
@@ -79,5 +78,4 @@ const menu_data: MenuItem[] = [
         link: "/contact",
     },
 ];
-
 export default menu_data;
