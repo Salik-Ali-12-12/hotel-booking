@@ -1,4 +1,4 @@
-import HeaderThree from "@/layouts/headers/HeaderThree"
+import HeaderThree from "@/layouts/headers/HeaderOne"
 import ErrorArea from "./ErrorArea"
 import FooterFive from "@/layouts/footers/FooterFive"
 import BreadCrumb from "@/components/common/BreadCrumb"

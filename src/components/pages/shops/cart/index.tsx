@@ -1,6 +1,6 @@
 import BreadCrumb from "@/components/common/BreadCrumb"
 import FooterSix from "@/layouts/footers/FooterSix"
-import HeaderThree from "@/layouts/headers/HeaderThree"
+import HeaderThree from "@/layouts/headers/HeaderOne"
 import CartArea from "./CartArea"
 
 const Cart = () => {

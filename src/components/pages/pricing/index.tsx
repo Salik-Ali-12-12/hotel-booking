@@ -1,5 +1,5 @@
 import BreadCrumb from "@/components/common/BreadCrumb"
-import HeaderThree from "@/layouts/headers/HeaderThree"
+import HeaderThree from "@/layouts/headers/HeaderOne"
 import PricingArea from "./PricingArea"
 import FooterThree from "@/layouts/footers/FooterThree"
 import Cta from "./Cta"

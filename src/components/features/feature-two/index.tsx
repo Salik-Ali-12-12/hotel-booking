@@ -1,4 +1,4 @@
-import HeaderThree from "@/layouts/headers/HeaderThree"
+import HeaderThree from "@/layouts/headers/HeaderOne"
 import FeatureArea from "./FeatureArea"
 import BreadCrumb from "./BreadCrumb"
 import BannerForm from "./BannerForm"

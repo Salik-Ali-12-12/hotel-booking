@@ -4,7 +4,7 @@ import ShopDetailsArea from "@/components/pages/shops/shop-details/ShopDetailsAr
 import ShopDetailsTabArea from "@/components/pages/shops/shop-details/ShopDetailsTabArea";
 import shop_data from "@/data/ShopData";
 import FooterSix from "@/layouts/footers/FooterSix";
-import HeaderThree from "@/layouts/headers/HeaderThree";
+import HeaderThree from "@/layouts/headers/HeaderOne";
 import Wrapper from "@/layouts/Wrapper";
 
 export const metadata = {

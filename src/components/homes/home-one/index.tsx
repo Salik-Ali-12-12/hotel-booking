@@ -9,7 +9,7 @@ import CtaTwo from "./CtaTwo"
 import Location from "./Location"
 import Testimonial from "./Testimonial"
 import dynamic from "next/dynamic"
-import HeaderThree from "@/layouts/headers/HeaderThree"
+import HeaderThree from "@/layouts/headers/HeaderOne"
 import FooterThree from "@/layouts/footers/FooterThree"
 import Cta from "../home-one/Cta"
 const Listing = dynamic(() => import("./Listing"), { ssr: false });
