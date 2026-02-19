@@ -1,6 +1,6 @@
 import Link from "next/link"
 
-const HeaderSixTop = () => {
+const HeaderOneTop = () => {
    return (
       <div className="tg-header-top tg-header-top-space tg-primary-bg d-none d-lg-block">
          <div className="container">
@@ -25,4 +25,4 @@ const HeaderSixTop = () => {
    )
 }
 
-export default HeaderSixTop
+export default HeaderOneTop
