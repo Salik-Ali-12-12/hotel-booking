@@ -1,5 +1,5 @@
 "use client"
-import BannerFormThree from "@/components/common/banner-form/BannerFormThree"
+import BannerFormOne from "@/components/common/banner-form/BannerFormOne"
 import About from "./About"
 import Banner from "./Banner"
 import Blog from "./Blog"
@@ -9,7 +9,7 @@ import CtaTwo from "./CtaTwo"
 import Location from "./Location"
 import Testimonial from "./Testimonial"
 import dynamic from "next/dynamic"
-import HeaderThree from "@/layouts/headers/HeaderOne"
+import HeaderOne from "@/layouts/headers/HeaderOne"
 import FooterThree from "@/layouts/footers/FooterThree"
 import Cta from "../home-one/Cta"
 const Listing = dynamic(() => import("./Listing"), { ssr: false });
@@ -17,10 +17,10 @@ const Listing = dynamic(() => import("./Listing"), { ssr: false });
 const HomeThree = () => {
    return (
       <>
-         <HeaderThree />
+         <HeaderOne />
          <main>
             <Banner />
-            <BannerFormThree />
+            <BannerFormOne />
             <About />
             <Listing />
             <Choose />
