@@ -1,8 +1,8 @@
-import HeaderThree from "@/layouts/headers/HeaderThree"
+import HeaderThree from "@/layouts/headers/HeaderOne"
 import Breadcrumb from "./Breadcrumb"
 import FeatureDetailsArea from "./FeatureDetailsArea"
 import FeatureAboutArea from "./FeatureAboutArea"
-import FooterSix from "@/layouts/footers/FooterSix"
+import FooterSix from "@/layouts/footers/FooterThree"
 
 const FeatureDetailsOne = () => {
    return (
