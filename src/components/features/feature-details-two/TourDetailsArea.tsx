@@ -23,7 +23,7 @@ const TourDetailsArea = () => {
                      </div>
                   </div>
                </div>
-               <div className="col-xl-3 col-lg-4">
+               {/* <div className="col-xl-3 col-lg-4">
                   <div className="tg-tour-details-video-share text-end mb-10">
                      <a href="#">
                         <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -38,7 +38,7 @@ const TourDetailsArea = () => {
                         Add to Wishlist
                      </a>
                   </div>
-               </div>
+               </div> */}
             </div>
          </div>
       </div>

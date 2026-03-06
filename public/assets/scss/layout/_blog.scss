@@ -5,11 +5,11 @@
 ===============================*/
 .tg-blog{
     &-space{
-        padding-bottom: 200px;
+        padding-bottom: 30px;
         &-2{
-            padding-bottom: 244px;
+            padding-bottom: 30px;
             @media #{$md,$sm,$xs} {
-                padding-bottom: 180px;
+                padding-bottom: 30px;
             }
         }
     }

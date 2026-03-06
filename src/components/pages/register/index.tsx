@@ -1,6 +1,6 @@
 import InnerHeader from "@/layouts/headers/InnerHeader"
 import RegisterArea from "./RegisterArea"
-import FooterFive from "@/layouts/footers/FooterFive"
+import FooterFive from "@/layouts/footers/FooterThree"
 
 const Register = () => {
    return (

@@ -1,7 +1,7 @@
 import HeaderThree from "@/layouts/headers/HeaderOne"
 import BreadCrumb from "../common/BreadCrumb"
 import ContactArea from "./ContactArea"
-import FooterFive from "@/layouts/footers/FooterFive"
+import FooterFive from "@/layouts/footers/FooterThree"
 
 const Contact = () => {
    return (

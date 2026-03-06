@@ -1,4 +1,4 @@
-import HeaderThree from "@/layouts/headers/HeaderOne"
+import HeaderThree from "@/layouts/headers/HeaderThree"
 import Breadcrumb from "./Breadcrumb"
 import FeatureDetailsArea from "./FeatureDetailsArea"
 import FeatureAboutArea from "./FeatureAboutArea"

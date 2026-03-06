@@ -1,80 +1,72 @@
 import NiceSelect from "@/ui/NiceSelect";
-
 const FeatureTop = () => {
-
    const selectHandler = () => { };
-
    return (
       <>
-         <div className="tg-listing-map-filter pt-25 pb-15">
-            <div className="item-select mb-10">
-               <NiceSelect
-                  className="select  item-first"
-                  options={[
-                     { value: "01", text: "Type" },
-                     { value: "02", text: "Hotel" },
-                     { value: "03", text: "Resort" },
-                     { value: "04", text: "Apartments" },
-                  ]}
-                  defaultCurrent={0}
-                  onChange={selectHandler}
-                  name=""
-                  placeholder="" />
-            </div>
-            <div className="item-select mb-10">
-               <NiceSelect
-                  className="select"
-                  options={[
-                     { value: "01", text: "Price" },
-                     { value: "02", text: "Price Low" },
-                     { value: "03", text: "Price High" },
-                     { value: "04", text: "Default" },
-                  ]}
-                  defaultCurrent={0}
-                  onChange={selectHandler}
-                  name=""
-                  placeholder="" />
-            </div>
-            <div className="item-select mb-10">
-               <NiceSelect
-                  className="select"
-                  options={[
-                     { value: "01", text: "Amenities" },
-                     { value: "02", text: "Free Coupons" },
-                     { value: "03", text: "Car Parking" },
-                     { value: "04", text: "Reservations" },
-                     { value: "04", text: "Restaurant" },
-                  ]}
-                  defaultCurrent={0}
-                  onChange={selectHandler}
-                  name=""
-                  placeholder="" />
-            </div>
-            <div className="item-select mb-10">
-               <NiceSelect
-                  className="select"
-                  options={[
-                     { value: "01", text: "Ratings" },
-                     { value: "02", text: "1 Star" },
-                     { value: "03", text: "2 Star" },
-                     { value: "04", text: "3 Star" },
-                     { value: "05", text: "4 Star" },
-                     { value: "06", text: "5 Star" },
-                  ]}
-                  defaultCurrent={0}
-                  onChange={selectHandler}
-                  name=""
-                  placeholder="" />
-            </div>
-         </div>
-         <div className="tg-listing-map-filter-bottom mb-5">
+         <div className="pt-25 pb-15">
             <div className="row align-items-center">
-               <div className="col-xl-5 mb-15">
-                  <div className="tg-listing-box-number-found">
-                     <span>3,269 properties in Europe</span>
+               <div className="tg-listing-map-filter col-xl-9 col-md-7 mb-15">
+                  <div className="item-select mb-10">
+                     <NiceSelect
+                        className="select  item-first"
+                        options={[
+                           { value: "01", text: "Type" },
+                           { value: "02", text: "Hotel" },
+                           { value: "03", text: "Resort" },
+                           { value: "04", text: "Apartments" },
+                        ]}
+                        defaultCurrent={0}
+                        onChange={selectHandler}
+                        name=""
+                        placeholder="" />
+                  </div>
+                  <div className="item-select mb-10">
+                     <NiceSelect
+                        className="select"
+                        options={[
+                           { value: "01", text: "Price" },
+                           { value: "02", text: "Price Low" },
+                           { value: "03", text: "Price High" },
+                           { value: "04", text: "Default" },
+                        ]}
+                        defaultCurrent={0}
+                        onChange={selectHandler}
+                        name=""
+                        placeholder="" />
+                  </div>
+                  <div className="item-select mb-10">
+                     <NiceSelect
+                        className="select"
+                        options={[
+                           { value: "01", text: "Amenities" },
+                           { value: "02", text: "Free Coupons" },
+                           { value: "03", text: "Car Parking" },
+                           { value: "04", text: "Reservations" },
+                           { value: "04", text: "Restaurant" },
+                        ]}
+                        defaultCurrent={0}
+                        onChange={selectHandler}
+                        name=""
+                        placeholder="" />
+                  </div>
+                  <div className="item-select mb-10">
+                     <NiceSelect
+                        className="select"
+                        options={[
+                           { value: "01", text: "Ratings" },
+                           { value: "02", text: "1 Star" },
+                           { value: "03", text: "2 Star" },
+                           { value: "04", text: "3 Star" },
+                           { value: "05", text: "4 Star" },
+                           { value: "06", text: "5 Star" },
+                        ]}
+                        defaultCurrent={0}
+                        onChange={selectHandler}
+                        name=""
+                        placeholder="" />
                   </div>
                </div>
-               <div className="col-xl-7 mb-15">
+               <div className="col-xl-3 col-md-5 mb-15">
                   <div className="tg-listing-box-view-type d-flex justify-content-end align-items-center">
                      <div className="tg-listing-sort">
                         <span>Sort by:</span>
@@ -102,9 +94,17 @@ const FeatureTop = () => {
                   </div>
                </div>
             </div>
+         </div >
+         <div className="tg-listing-map-filter-bottom mb-5">
+            <div className="row align-items-center">
+               <div className="col-12 mb-15">
+                  <div className="tg-listing-box-number-found">
+                     <span>3,269 properties in Europe</span>
+                  </div>
+               </div>
+            </div>
          </div>
       </>
    )
 }
-
 export default FeatureTop

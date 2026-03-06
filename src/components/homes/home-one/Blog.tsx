@@ -38,7 +38,7 @@ const blog_data: DataType[] = [
 
 const Blog = () => {
    return (
-      <div className="tg-blog-area tg-blog-space tg-grey-bg pt-135 p-relative z-index-1">
+      <div className="tg-blog-area tg-blog-space tg-grey-bg pt-100 p-relative z-index-1">
          <Image className="tg-blog-shape" src={shape_1} alt="shape" />
          <Image className="tg-blog-shape-2" src={shape_2} alt="shape" />
          <div className="container">

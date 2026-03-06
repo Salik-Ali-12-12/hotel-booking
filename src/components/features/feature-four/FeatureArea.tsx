@@ -35,7 +35,7 @@ const FeatureArea = () => {
 
    return (
       <div className="tg-listing-map-area fix">
-         <div className="container-fluid p-0">
+         <div className="container p-2">
             <div className="row gx-0">
                <div className="col-lg-12">
                   <div className="tg-listing-map-list-wrap mb-15">
@@ -51,7 +51,7 @@ const FeatureArea = () => {
                         <div className="tg-listing-map-list-item">
                            <div className="row">
                               {currentItems.map((item) => (
-                                 <div key={item.id} className="col-4">
+                                 <div key={item.id} className="col-lg-4 col-sm-6">
                                     <div className="tg-listing-card-item tg-listing-4-card-item mb-25">
                                        <div className="tg-listing-card-thumb tg-listing-2-card-thumb mb-15 fix p-relative">
                                           <Link href="/tour-details-2">

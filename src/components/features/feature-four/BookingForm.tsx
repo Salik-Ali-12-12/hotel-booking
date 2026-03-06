@@ -78,8 +78,8 @@ const BookingForm = () => {
 
    return (
       <form onSubmit={(e) => e.preventDefault()}>
-         <div className="tg-booking-form-input-group d-flex align-items-end justify-content-between">
-            <div className="tg-booking-form-parent-inner tg-hero-quantity p-relative mr-15 mb-10">
+         <div className="tg-booking-form-input-group d-flex align-items-end justify-content-between gap-4">
+            <div className="tg-booking-form-parent-inner tg-hero-quantity p-relative mr-15">
                <span className="tg-booking-form-title mb-5">Check in:</span>
                {/* <span className="tg-booking-form-title mb-5">Destinations:</span> */}
                <div ref={locationRef} onClick={() => setLocation((prev) => !prev)} className={`tg-booking-add-input-field tg-booking-quantity-toggle ${location ? "active" : ""} `}>
@@ -116,7 +116,7 @@ const BookingForm = () => {
                   </ul>
                </div>
             </div>
-            <div className="tg-booking-form-parent-inner mr-15 mb-15">
+            <div className="tg-booking-form-parent-inner mr-15 ">
                <span className="tg-booking-form-title mb-5">Check in:</span>
                <div className="tg-booking-add-input-date p-relative">
                   <span>
@@ -136,7 +136,7 @@ const BookingForm = () => {
                   />
                </div>
             </div>
-            <div className="tg-booking-form-parent-inner tg-hero-quantity p-relative mr-15 mb-15">
+            <div className="tg-booking-form-parent-inner tg-hero-quantity p-relative mr-15">
                <span className="tg-booking-form-title mb-5">Guest:</span>
                <div ref={guestRef} onClick={() => setGuest((prev) => !prev)} className={`tg-booking-add-input-field tg-booking-quantity-toggle ${guest ? "active" : ""}`}>
                   <span className="location">
@@ -180,7 +180,7 @@ const BookingForm = () => {
                   </div>
                </div>
             </div>
-            <div className="tg-booking-form-search-btn mb-10">
+            <div className="tg-booking-form-search-btn">
                <button className="bk-search-button" type="submit">Search
                   <span className="ml-5">
                      <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">

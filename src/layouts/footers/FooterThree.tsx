@@ -1,13 +1,12 @@
 "use client"
 import Image from "next/image"
 import Link from "next/link"
-
 import logo from "@/assets/img/logo/logo-white.png"
-
+import CTA from "@/components/homes/home-one/Cta"
 const FooterThree = () => {
-
    return (
       <>
+         <CTA />
          <footer>
             <div className="tg-footer-area tg-footer-space include-bg" style={{ backgroundImage: `url(/assets/img/footer/footer.jpg)` }}>
                <div className="container">
@@ -112,5 +111,4 @@ const FooterThree = () => {
       </>
    )
 }
-
 export default FooterThree

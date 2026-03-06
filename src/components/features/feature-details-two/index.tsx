@@ -1,14 +1,14 @@
 import BreadCrumb from "./BreadCrumb"
 import TourDetailsArea from "./TourDetailsArea"
 import TourAboutDetails from "./TourAboutDetails"
-import HeaderOne from "@/layouts/headers/HeaderOne"
+import HeaderThree from "@/layouts/headers/HeaderOne"
 import Listing from "./Listing"
-import FooterFive from "@/layouts/footers/FooterFive"
+import FooterFive from "@/layouts/footers/FooterThree"
 
 const FeatureDetailsTwo = () => {
    return (
       <>
-         <HeaderOne />
+         <HeaderThree />
          <main>
             <BreadCrumb />
             <TourDetailsArea />

@@ -7,3 +7,7 @@
 @import "../../public/assets/css/default.css";
 @import "../../public/assets/css/flatpicker.css";
 @import "../../public/assets/css/fontawesome-all.min.css";
+
+.tg-listing-card-item.tg-listing-4-card-item.mb-25 {
+    flex-wrap: wrap !important;
+}

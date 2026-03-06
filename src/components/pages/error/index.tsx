@@ -1,6 +1,6 @@
 import HeaderThree from "@/layouts/headers/HeaderOne"
 import ErrorArea from "./ErrorArea"
-import FooterFive from "@/layouts/footers/FooterFive"
+import FooterFive from "@/layouts/footers/FooterThree"
 import BreadCrumb from "@/components/common/BreadCrumb"
 
 const NotFound = () => {

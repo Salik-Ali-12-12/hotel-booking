@@ -1,5 +1,5 @@
 import LoginArea from "./LoginArea"
-import FooterFive from "@/layouts/footers/FooterFive"
+import FooterFive from "@/layouts/footers/FooterThree"
 import InnerHeader from "@/layouts/headers/InnerHeader"
 
 const Login = () => {

@@ -1,5 +1,5 @@
 import BreadCrumb from "@/components/common/BreadCrumb"
-import FooterSix from "@/layouts/footers/FooterSix"
+import FooterSix from "@/layouts/footers/FooterThree"
 import HeaderThree from "@/layouts/headers/HeaderOne"
 import AboutArea from "./AboutArea"
 import Choose from "./Choose"

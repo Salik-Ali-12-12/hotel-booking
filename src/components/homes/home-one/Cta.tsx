@@ -13,7 +13,7 @@ const Cta = () => {
 
    return (
       <>
-         <div className="tg-banner-area tg-banner-space">
+         <div className="tg-banner-area tg-banner-space pb-100">
             <div className="container">
                <div className="row gx-0">
                   <div className="col-lg-7">
@@ -44,7 +44,7 @@ const Cta = () => {
                </div>
             </div>
          </div>
-         <span className="tg-banner-transparent-bg"></span>
+         {/* <span className="tg-banner-transparent-bg"></span> */}
          <VideoPopup
             isVideoOpen={isVideoOpen}
             setIsVideoOpen={setIsVideoOpen}

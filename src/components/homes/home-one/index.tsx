@@ -11,7 +11,7 @@ import Testimonial from "./Testimonial"
 import dynamic from "next/dynamic"
 import HeaderOne from "@/layouts/headers/HeaderOne"
 import FooterThree from "@/layouts/footers/FooterThree"
-import Cta from "../home-one/Cta"
+
 const Listing = dynamic(() => import("./Listing"), { ssr: false });
 
 const HomeThree = () => {
@@ -29,7 +29,6 @@ const HomeThree = () => {
             <CtaTwo />
             <Testimonial />
             <Blog />
-            <Cta />
          </main>
          <FooterThree />
       </>
